@@ -1,0 +1,26 @@
+{
+  "name": "k_invert",
+  "version": "1.0.0",
+  "description": "",
+  "main": "k_invert.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "verbose": true,
+    "collectCoverage": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enricoberthod/k_invert.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/enricoberthod/k_invert/issues"
+  },
+  "homepage": "https://github.com/enricoberthod/k_invert#readme",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
+}
