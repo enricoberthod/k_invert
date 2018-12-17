@@ -17,7 +17,7 @@ app.get('/', (req, res) => res.send('Hello World!'))
 var a = [1,2,3,4,5]
 
 app.get('/k_invert', (req, res) => {
-    var a = k_invert(a,req.query.k);
+    var a = k_invert(a,parseInt(req.query.k,10));
     var risultato = {result: a};
     res.send(risultato);
 })
