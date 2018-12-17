@@ -2,9 +2,9 @@ function k_invert(a,k) {
 	var b = []
 	//console.log(a)
 	if(!a || !k || arguments.length!==2)
-		return('error1');
+		return('error');
 	if(k<=0 || k>a.length || isNaN(k) || !(Number.isInteger(k)))
-		return('error2');
+		return('error');
 	for(let x=0; x<a.length; x++) {
 		b[x] = a[x]
 	}
