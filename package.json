@@ -4,6 +4,7 @@
   "description": "",
   "main": "k_invert.js",
   "scripts": {
+    "start": "node api.js",
     "test": "jest"
   },
   "jest": {
@@ -22,5 +23,10 @@
   "homepage": "https://github.com/enricoberthod/k_invert#readme",
   "devDependencies": {
     "jest": "^23.6.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "node-fetch": "^2.3.0"
   }
 }
