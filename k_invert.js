@@ -1,8 +1,9 @@
 function k_invert(a,k) {
+	//console.log(a)
 	if(!a || !k || arguments.length!==2)
-		return('error');
+		return('error1');
 	if(k<=0 || k>a.length || isNaN(k) || !(Number.isInteger(k)))
-		return('error');
+		return('error2');
 	for(let i=1; i<=k; i++) {
 		var tmp = a[a.length-1];
 		for(let j=a.length-1; j>0; j--) {

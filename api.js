@@ -14,11 +14,16 @@ const url = 'http://localhost:8000'
 app.get('/', (req, res) => res.send('Hello World!'))
 
 
-var a = [1,2,3,4,5]
+var a = [1,2,3,4,5];
 
 app.get('/k_invert', (req, res) => {
-    var a = k_invert(a,parseInt(req.query.k,10));
-    var risultato = {result: a};
+	//console.log(req.query.k)
+	var k = parseInt(req.query.k,10)
+	
+	//console.log(typeof k)
+	//console.log(Number.isInteger(k))
+    var new_a = k_invert(a,k);
+    var risultato = {result: new_a};
     res.send(risultato);
 })
 
